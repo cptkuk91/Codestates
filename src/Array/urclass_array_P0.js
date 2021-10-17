@@ -6,6 +6,7 @@ let fruits = [
 
 fruits[2];
 console.log(fruits[2]);
+console.log(fruits[3]);
 
 // fruits의 2번 째 index 값은?
 // => fruits[2] == pineapple
