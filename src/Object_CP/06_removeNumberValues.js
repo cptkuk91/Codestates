@@ -3,6 +3,7 @@ function removeNumberValues(obj) {
     for(let key in obj){
       if(typeof(obj[key]) === "number"){
           // 여기서 왜 number 속성에 "" 붙였는가?
+          // https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/typeof
         delete obj[key]
       }
     }
