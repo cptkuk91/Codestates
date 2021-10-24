@@ -3,3 +3,8 @@ function addToBackOfNew(arr, el) {
     arr2.push(el);
     return arr2;
 }
+
+// function addToBackOfNew(arr, el) {
+//     // TODO: 여기에 코드를 작성합니다.
+//     return arr2 = arr.concat(el);
+// }
