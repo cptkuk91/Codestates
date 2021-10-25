@@ -12,3 +12,13 @@ function createPhoneNumber(arr) {
     return `${result}${body}-${tail}`;
 
 }
+
+
+// function createPhoneNumber(arr) {
+//     // TODO: 여기에 코드를 작성합니다.
+//     if(arr.length === 8){
+//         return `(010)${arr.slice(0, 4).join('')}-${arr.slice(4, 8).join('')}`;
+//     } else if(arr.length === 11){
+//         return `(${arr.slice(0,3).join('')})${arr.slice(3, 7).join('')}-${arr.slice(7,11).join('')}`;
+//     }
+// }
