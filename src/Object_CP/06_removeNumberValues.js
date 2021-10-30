@@ -7,6 +7,5 @@ function removeNumberValues(obj) {
         delete obj[key]
       }
     }
-    obj;
   }
   
