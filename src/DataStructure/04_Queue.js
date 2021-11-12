@@ -15,8 +15,11 @@ function paveBox(boxes) {
             boxes.splice(0, boxes.length); // slice 0~box의 길이를 통해 내부 요소를 전부 삭제
         } else {
             // 만족하는 요소가 있을 경우 해당 인덱스를 result에 넣어주고, box의 길이를 그만큼 제외해주면 됩니다.
-
-            // 만족하는 요소의 값은 finishIndex
+            // 만족하는 요소의 값은 finishIndex result에 push 해줍니다.
+            result.push(finishIndex);
+            // 남은 길이는 다음 순서에 넘겨줍니다.
+            boxes.splice(0, finishIndex);
         }
     }
+    return result;
   }
