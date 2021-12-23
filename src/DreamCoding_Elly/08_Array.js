@@ -16,3 +16,13 @@ const fruits = ['apple', 'banana'];
 for(let i = 0; i < fruits.length; i++){
     console.log(fruits[i]);
 }
+
+// for of 를 통한 array 출력
+for(let fruit of fruits){
+    console.log(fruit);
+}
+
+// forEach 를 사용한 array 출력
+fruits.forEach((el, index) => {
+    console.log(el, index);
+});
