@@ -21,3 +21,5 @@ console.log(json2);
 
 // JSON to Object
 // parse(json)
+const obj = JSON.parse(json2);
+console.log(obj);
