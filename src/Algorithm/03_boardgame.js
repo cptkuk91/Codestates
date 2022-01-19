@@ -18,7 +18,7 @@ function boardGame(board, operation) {
         return "OUT";
       }
       // 결과값을 result에 board[row, col]을 통해 담아주자.
-      return (result = board[row][col]);
+      result += board[row][col];
     }
     // 그 외 "U", "L", "R"을 만들어보자.
     if (char === "U") {
@@ -27,7 +27,7 @@ function boardGame(board, operation) {
         return "OUT";
       }
       // 결과값을 result에 board[row, col]을 통해 담아주자.
-      return (result = board[row][col]);
+      result += board[row][col];
     }
     if (char === "L") {
       col--;
@@ -35,7 +35,7 @@ function boardGame(board, operation) {
         return "OUT";
       }
       // 결과값을 result에 board[row, col]을 통해 담아주자.
-      return (result = board[row][col]);
+      result += board[row][col];
     }
     if (char === "R") {
       col++;
@@ -43,7 +43,7 @@ function boardGame(board, operation) {
         return "OUT";
       }
       // 결과값을 result에 board[row, col]을 통해 담아주자.
-      return (result = board[row][col]);
+      result += board[row][col];
     }
   }
   return result;
