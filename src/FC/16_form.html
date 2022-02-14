@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/" method="get">
+        <!-- 텍스트 입력 요소 -->
+        <input type="text" name="userId" /><br>
+
+        <!-- 비밀번호 입력 요소 -->
+        <input type="password" name="password" /><br>
+        
+        <!-- checkbox는 여러개 선택이 가능하다. -->
+        <label for="soccer">축구</label>
+        <input type="checkbox" name="hobby" id="soccer"><br>
+
+        <label for="music">음악</label>
+        <input type="checkbox" name="hobby" id="music"><br>
+
+        <label for="game">게임</label>
+        <input type="checkbox" name="hobby" id="game"><br>
+
+
+        <!-- radio는 택1이다. -->
+        <label for="female">여성</label>
+        <input type="radio" name="gender" id="female">
+
+        <label for="male">남성</label>
+        <input type="radio" name="gender" id="male"><br>
+
+        <!-- select를 통한 dropdown 방식 -->
+        <label for="edu">최종학력</label><br>
+        <select name="education" id="">
+            <!-- id값을 동일한 값이 나올 수 없다. -->
+            <option value="primary">초등학교</option>
+            <option value="middle">중학교</option>
+            <option value="high">고등학교</option>
+        </select><br>
+
+        <!-- HTML5 새롭게 추가된 요소 -->
+        <!-- 색상 선택 기능 -->
+        <input type="color"><br>
+
+        <!-- 날짜 지정 -->
+        <input type="date"><br>
+
+        <!-- 메일 주소 입력 폼 -->
+        <input type="email"><br>
+
+        <!-- 범위를 지정하는 폼 -->
+        <input type="range"><br>
+
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="hello"></textarea><br>
+
+        <!-- 초기화 버튼 -->
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
