@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+div{
+    border: 1px solid red;
+}
+
+/* hover 사용하는 방법 */
+div:hover{
+    border: 5px solid blue;
+}
+
+/* click 하고 있으면 초록색으로-! */
+div:active{
+    border: 3px solid green;
+}
+
+/* div 앞쪽에 문자열 추가하기 */
+/* html은 content 밖에 없지만 css를 통해서 내용을 추가했다. */
+div::before{
+    content: "before";
+    border: 1px solid orange;
+}
+
+div::after{
+    content: "Hello";
+}
+
+/* 실무에서는 hover를 많이 쓴다. */

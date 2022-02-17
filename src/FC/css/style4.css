@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+p.blue{
+    border: 1px solid blue;
+}
+
+/* class 선택자는 .class명만 사용해도 적용이 된다. */
+.red{
+    border: 1px solid red;
+}
+
+/* id를 활용한 css 적용하기 */
+p#green{
+    border: solid 1px green;
+}
+
+#orange {
+    border: solid 1px orange;
+}
