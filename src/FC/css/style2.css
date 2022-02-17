@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* 첫 번째 li만 선택하고 싶을 때 */
+ul li:nth-of-type(2n) {
+    border: 1px solid blue;
+}
+
+/* nth-of-type(2n) 2의 배수로 적용이 가능하다. */
+/* last of child 등 비슷한 문법은 많고 다양하다. */

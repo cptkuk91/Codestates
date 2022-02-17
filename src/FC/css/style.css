@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
-h1 {
-    color: red;
+div > a{
+    /* border는 테두리 1px 검정색으로 */
+    border: 1px solid black; 
+
 }
+
+/* > 꺽쇠를 사용할 경우 직계자식만 적용 시킬 수 있다. 자손 선택자. 자식 선택자에 대해서 알아야한다.*/
