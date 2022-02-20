@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+div{
+    width: 100px;
+    height: 100px;
+    background: orange;
+    /* text-align과 margin의 차이를 이해해야 한다. */
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+
+.div2{
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    /* overflow를 통해 넘친 값을 조절할 수 있다. */
+    overflow: auto;
+    /* auto를 자동으로 스크롤 바 생기게 해서 넘치는 값도 확인할 수 있다. */
+}

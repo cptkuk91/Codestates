@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.box1{
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+    font-size: 30px;
+    /* margin은 바같 여백을 준다. */
+    /* 첫 값은 위 아래, 두 번째 값은 좌우 */
+    /* 4개 값을 넣을 경우 시계방향으로 위 우 아래, 좌 */
+    margin: 100px 100px 100px 100px;
+}
+
+.box2{
+    width: 300px;
+    height: 300px;
+    background-color: burlywood;
+    font-size: 30px;
+    margin: 100px;
+}

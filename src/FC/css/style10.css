@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+p{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    /* line-height 줄높이 */
+    font-family: 'Times New Roman', Times, serif;
+    /* 글씨체 */
+    color: blue;
+}

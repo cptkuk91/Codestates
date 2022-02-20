@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.box1{
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    padding: 50px;
+    background-color: pink;
+    border-width: 20px;
+    border-style: solid;
+    border-color: red;
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    padding: 50px;
+    background-color: paleturquoise;
+    font-size: 26px;
+    border-radius: 15px;
+    border-style: dashed;
+    /* 기존 크기의 값을 유지해주는 box-sizing은 실무에서 많이 사용된다. */
+    box-sizing: border-box;
+}

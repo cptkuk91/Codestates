@@ -1,0 +1,14 @@
+.box{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: brown;
+    /* 배경 위치 (x, y)*/
+    background-position: center center;
+
+    /* 배경 반복 */
+    background-repeat: no-repeat;
+
+    /* 배경 크기 cover의 경우 가득 채운다.*/
+    background-size: cover;
+}
