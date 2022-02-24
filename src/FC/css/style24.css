@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    height: 0px;
+}
+
+div::before{
+    content: "before";
+    color: blue;
+    display: block;
+}
+
+div::after{
+    content: "after";
+    color: red;
+    display: block;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    margin: 100px auto;
+}
+
+div:hover{
+    background-color: hotpink;
+}

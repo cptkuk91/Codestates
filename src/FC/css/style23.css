@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    height: 0px;
+}
+
+.wrap {
+    width: 800px;
+    height: 800px;
+    border: 10px solid #000;
+    margin: 100px auto;
+}
+
+.wrap .left{
+    width: 400px;
+    height: 400px;
+    background: aqua;
+    /* 좌우 배치를 하고 싶은 경우 float를 사용하면 된다. */
+    float: left;
+}
+
+.wrap .right{
+    width: 400px;
+    height: 400px;
+    background: pink;
+    /* 좌우 배치를 하고 싶은 경우 float를 사용하면 된다. */
+    float: right;
+}
+
+.wrap .bottom{
+    width: 800px;
+    height: 800px;
+    background: green;
+    /* clear:bot를 통해 넘치는 걸 표현할 수 있지만 */
+    /* wrap 크기만큼 넘치지 않게 자동으로 잡아준다. */
+}
+
+.wrap::after{
+    /* wrap 가장 뒷쪽 영역 */
+    content: "hello";
+    color: red;
+}

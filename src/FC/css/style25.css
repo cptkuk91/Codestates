@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    height: 0px;
+}
+
+.wrap{
+    width: 300px;
+    height: 600px;
+    border: 10px solid #000;
+    margin: 100px auto;
+}
+
+.wrap .box1{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+    /* position을 통해 자연스럽게 배치할 수 있다. */
+    top: -50px; 
+    /* position을 사용하면 .wrap과 relative 된다. 따라서 자연스럽게 위치를 이동시킬 수 있다. */
+}
+
+.wrap .box2{
+    width: 300px;
+    height: 300px;
+    background-color: hotpink;
+}
