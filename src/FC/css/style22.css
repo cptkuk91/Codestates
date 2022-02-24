@@ -14,8 +14,11 @@
 
 ul, ol {
     list-style: none;
+    /* 앞에 동그라미 없애기 */
 }
 
 a{
     text-decoration: none;
+    /* 밑줄 없애기 */
 }
+
