@@ -1,0 +1,7 @@
+div{
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    background: linear-gradient(45deg, blue, red);
+    /* 색상은 2개를 입력해도, 3개를 입력해도, 그 이상을 입력해도 상관없다. */
+}

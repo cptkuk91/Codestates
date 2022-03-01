@@ -1,0 +1,7 @@
+p{
+    font: bold 200px/1 "arial";
+    color: slateblue;
+    margin: 50px;
+    text-shadow: 20px 20px 5px grey;
+    /* text 그림자 효과를 줄 수 있다. 자세한 내용은 추가적인 공부를 통해 사용하자. */
+}

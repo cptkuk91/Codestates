@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* em과 rem 차이 */
+
+/* html전체 폰트 사이즈를 조절 */
+html{
+    font-size: 16px;
+}
+
+/* rem을 통해서 기준점인 html * 6 사이즈를 할 수 있다. */
+h1{
+    font-size: 6rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+a{
+    font-size: 0.8rem;
+}
+/* rem의 장점은 기준점 수정을 통해 전체 사이즈를 조절할 수 있다. */
+
+
+

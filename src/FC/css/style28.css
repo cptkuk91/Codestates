@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box1{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* position의 역할을 잘 파악해야 한다. */
+    /* z축의 값이 올라가면 앞에 보인다. */
+    z-index: 10;
+}
+
+.box2{
+    width: 400px;
+    height: 400px;
+    background-color: violet;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: 5;
+    opacity: 0.5;
+    /* opacity를 통해서 투명도 조절을 할 수 있다. */
+}

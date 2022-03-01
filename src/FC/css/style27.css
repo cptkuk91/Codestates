@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrap{
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    border: 1px solid #000;
+    position: relative;
+    /* fixed 와 realative의 차이 */
+}
+
+.wrap p {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
