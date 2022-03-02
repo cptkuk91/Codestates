@@ -1,38 +1,23 @@
 function movingStuff(stuff, limit) {
-  // TODO: 여기에 코드를 작성합니다.
-  let boxCount = 0;
-  let sorted = stuff.sort((a, b) => a - b, 0);
-  let biggest = stuff.length - 1;
-  let smallest = 0;
+  // 박스의 갯수를 반환 할 count를 선언한다.
+  let count = 0;
+  let left = 0; // 가장 왼쪽(작은) 있는 경우
+  let right = stuff.length - 1; // 가장 오른쪽(큰) 경우
+  // 박스를 크기별로 sort한다.
+  let sorted = stuff.sort((a, b) => a - b);
 
-  // 작은박스와 큰 박스보다 작으면 계속해서 반복한다.
-  while (biggest > smallest) {
-    if (sorted[smallest] + sorted[biggest] <= limit) {
-      boxCount++;
-      smallest++; // 작은 건 더하고,
-      biggest--; // 큰건 제외하면서 온다.
+  while (left < right) {
+    // left, right으로 가장 작은 무게와 가장 큰것을 합쳐보고
+    // left + right <= limit인 경우 count++
+    // left + right가 limit보다 큰 경우 right만 count 한다.
+    // 이 때 right는 가장 끝에 위치해 있기 때문에 stuff.length - 1을 활용한다.
+    if (sorted[left] + sorted[right] <= limit) {
+      left++;
+      right--;
+      count++;
     } else {
-      biggest--; // 한 박스만 들어가도 limit에 걸린다면 biggest를 빼준다.
+      right--;
     }
   }
-  return stuff.length - boxCount;
+  return stuff.length - count;
 }
-
-// function movingStuff(stuff, limit) {
-//     // TODO: 여기에 코드를 작성합니다.
-//     let count = 0;
-//     let sorted = stuff.sort((a, b) => a - b);
-//     let biggest = sorted.length - 1;
-//     let smallest = 0;
-
-//     while(biggest > smallest){
-//       if(sorted[smallest] + sorted[biggest] <= limit){
-//         count++;
-//         smallest++;
-//         biggest--; // 무거운 짐을 뺀다.
-//       } else {
-//         biggest--; // 애초에 무겁다..
-//       }
-//     }
-//     return stuff.length - count;
-//   }
