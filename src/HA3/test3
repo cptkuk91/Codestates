@@ -1,0 +1,48 @@
+function test3(board, operation) {
+  // TODO: 여기에 코드를 작성하세요.
+  let visited = [];
+  let total = 0;
+  let curx = 0;
+  let cury = 0;
+  let dirx = [0, 1, 0, -1];
+  let diry = [1, 0, -1, 0];
+  let N = board.length;
+  let dir;
+
+  for (let i = 0; i < operation.length; i++) {
+    if (operation[i] === "R") {
+      dir = 0;
+    } else if (operation[i] === "D") {
+      dir = 1;
+    } else if (operation[i] === "L") {
+      dir = 2;
+    } else if (operation[i] === "U") {
+      dir = 3;
+    }
+
+    curx += dirx[dir];
+    cury += diry[dir];
+
+    if (curx >= N || curx < 0 || cury >= N || cury < 0) {
+      curx -= dirx[dir];
+      cury -= diry[dir];
+      continue;
+    }
+    if (visited.indexOf("" + curx + cury) == -1) {
+      total += board[curx][cury];  //?
+      visited.push("" + curx + cury); //?
+    }
+  }
+
+  return total; //?
+}
+
+// ==== TEST CASE ====
+const board3 = 
+  [
+    [4345, 112, 11, 756],
+    [1, 1, 1, 0],
+    [456, 238, 77, 7],
+    [0, 0, 0, 0],
+  ];
+test3(board3, 'RRDLLDDLLRRDDDLLRUUUU');
